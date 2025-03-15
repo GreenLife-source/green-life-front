@@ -1,0 +1,144 @@
+header {
+  position: relative;
+  display: flex;
+  align-items: center; /* Centraliza os elementos verticalmente */
+  justify-content: space-between; /* Distribui o menu e logo */
+  padding: 0 10px; /* Espaçamento nas laterais */
+  height: 90px; /* Altura definida */
+  box-sizing: border-box;
+  background-color: black;
+  z-index: 1;
+
+  overflow: visible;
+}
+
+header a:visited {
+  text-decoration: none;
+}
+
+header a:link {
+  text-decoration: none;
+}
+
+.btn-menu {
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  color: white;
+  font-size: 40px;
+  font-family: "Lato", sans-serif;
+  flex-shrink: 0;
+  cursor: pointer;
+}
+
+.header-center {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 40px;
+}
+
+.pesquisar {
+  float: right;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  margin-top: 8px;
+  margin-right: 16px;
+  border-radius: 10px;
+
+  width: 35vw;
+}
+
+.pesquisar input[type="text"] {
+  width: 100%;
+  border: none;
+  padding: 6px;
+  font-size: 17px;
+  border-top-left-radius: inherit;
+  border-bottom-left-radius: inherit;
+}
+
+.pesquisar input[type="text"]:focus-visible {
+  outline: 0;
+}
+
+.pesquisar input[type="text"]::placeholder {
+  font-size: 14px;
+}
+
+.btn-pesquisar {
+  background-color: #888888;
+  width: 30px;
+  aspect-ratio: 1/1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-top-right-radius: inherit;
+  border-bottom-right-radius: inherit;
+  border: none;
+  cursor: pointer;
+}
+
+.btn-pesquisar:focus-visible {
+  outline: red 3px solid;
+}
+
+.icone-pesquisa {
+  color: white;
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: clamp(150px, 45vw, 400px); /* Tamanho principal da logo */
+  aspect-ratio: 4 / 1; /* Mantém a proporção de um por dois e dois por um lá na antárdida suave*/
+  position: relative;
+  transform: scale(1);
+  transform-origin: center center;
+  padding: auto;
+
+  opacity: 1;
+}
+
+.perfil {
+  background-image: url("./amolecedor.jpg");
+  background-size: cover;
+  width: 75px;
+  aspect-ratio: 1/1;
+  border-radius: 20%;
+}
+
+@media only screen and (max-width: 768px) {
+  .logo-container {
+    width: clamp(60px, 25vw, 300px);
+  }
+
+  .pesquisar {
+    width: 20px;
+  }
+
+  .pesquisar input[type="text"] {
+    display: none;
+  }
+
+  .btn-pesquisar {
+    border-radius: 25%;
+  }
+
+  .header-center {
+    gap: 40px;
+  }
+
+  .btn-menu {
+    width: 30px;
+    height: 30px;
+    font-size: 30px;
+  }
+
+  .perfil {
+    width: 40px;
+    height: 40px;
+  }
+}

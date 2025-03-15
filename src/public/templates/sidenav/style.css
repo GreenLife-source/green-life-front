@@ -1,0 +1,67 @@
+.pre-sidenav {
+  position: fixed;
+  background-color: black;
+  filter: opacity(0.3);
+  z-index: 99;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 100vh;
+  transition: 0.3s ease-in;
+}
+
+.pre-sidenav.visivel {
+  width: 100vw;
+  transform: 1s ease-out;
+}
+
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 99;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  color: #818181;
+  margin-left: 50px;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.sidenav .closebtn:hover {
+  color: #f1f1f1;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {
+    padding-top: 15px;
+  }
+  .sidenav a {
+    font-size: 18px;
+  }
+}

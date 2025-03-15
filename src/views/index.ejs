@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/resetar.css" />
+    <link rel="stylesheet" href="/index/style.css" />
+
+    <title><%= title %></title>
+  </head>
+  <body>
+    <%- include('templates/sidenav') %>
+
+    <!-- Bota o header-->
+    <%- include('templates/header') %>
+
+    <main>
+      <h2>Título: <%= title %></h2>
+      <h2>Ambiente: <%= environment %></h2>
+      <a class="next-page-btn" href="/sobre">Sobre nós</a>
+    </main>
+
+    <script src="/index/script.js">
+      console.log("Está Sendo puxado da pasta public")
+    </script>
+  </body>
+</html>

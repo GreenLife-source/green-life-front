@@ -1,0 +1,125 @@
+Como executar: aperte CTRL + J dentro
+do vscode e execute um dos seguintes
+comandos: "npm start" ou "npm run dev"
+para parar o site, você deve apertar
+CTRL + C dentro do terminal do vscode.
+
+Comando "npm start":
+  Executa o site de forma otimizada, mas
+  ruim para programar.
+
+Comando "npm run dev":
+  Exceuta o site de forma meio lenta,
+  mas ele reinicia o site toda vez que
+  salvar um arquivo, o que economiza
+  bastante tempo.
+
+Ao fazer commit, usar "fix:" ou
+"feat:" antes de colocar a mensagem,
+pois isso aumenta a versão do site no
+package.json.
+  "feat:":
+    Aumenta a versão em 0.1.0
+  "fix:":
+    Aumenta a versão em 0.0.1
+
+A primeira coisa que se deve fazer ao
+usar esses arquivos, é, dentro do 
+vscode, apertar CTRL + J e executar o
+comando "npm install", para ele
+instalar as dependências
+
+Se quiser trocar o título do site,
+você deverá ir no arquivo routes.js e
+mudar o conteúdo da constante 
+"nomeDoSite"
+
+Todo arquivo js que não estiver na 
+pasta "public", tem uma explicação do
+que faz nas primeiras linhas. 
+
+Este arquivo irá explicar o que os 
+outros arquivos fazem e para que serve 
+cada pasta.
+
+Arquivo .gitignore:
+  Ele lista todos os arqivos e pastas
+  que não devem ser enviadas para o
+  Github.
+
+Arquivos .env:
+  Define valores secretos que não devem
+  ser publicas de nenhuma maneira e são
+  separados em development e production,
+  pois em cada um talvez tenha 
+  diferenças.
+
+Arquivo package.json:
+  É lá onde fica as informações do
+  projeto, como nome, autores,
+  quais bibliotecas usa, etc.
+  Ignore o package-lock.json.
+
+Arquivo nodemon.json:
+  Ele é quem dita quais arquivos devem
+  reiniciar o servidor no modo de
+  desenvolvimento(development).
+
+Pasta views:
+  Nela é onde vai ficar os substitutos
+  do HTML(os arqivos ejs), na pasta 
+  templates, é guardado as partes já
+  programadas e para não repetir código.
+  
+Pasta public:
+  Nela é contida os arquivos css e js de
+  cada página e é separada por pastas
+  com o nome de cada página.
+
+Dica:
+  Se por algum acaso você não consegue
+  fazer uma página ou um template usar
+  css, js ou algum outro arquivo na
+  pasta public, é porquê você esqueceu
+  de botar uma barra antes.
+
+  Exemplo: 
+    Errado: "perfil/style.css"
+    Certo: "/perfil/style.css"
+
+Otimizações:
+  app.use(compressiom()):
+    Faz com que o servidor diminua o 
+    tamanho de qualquer arquivo enviado ao
+    usuário, o que ajuda a carregar mais
+    rápido o site.
+
+  app.use(express.static("public", { maxAge: "1y" })):
+    Faz o usuário armazenar por até um ano
+    os arquivos já carregados da pasta
+    "public". É cruel? É, mas quem vai
+    descobrir? 💀💀💀
+
+Pra quê serve o Express, rotas e EJS?
+  Express: 
+    É um facilitador(framework) para criar
+    API(Backend) ou sites(vai por mim, se
+    não fosse por ele seria MUITO código no
+    app.js e server.js).
+  
+  Rotas:
+    site.com/galeria ou site.com/jogos,
+    ele literalmente é tudo depois da 
+    barra, podendo servir para entrar em
+    páginas html, ou poder acessar o
+    backend com 
+    site.com/imagens/homens-despidos ou
+    site.com/jogos/jogo-lavar-louça
+    (depende da sua criatividade 🔥🔥🔥).
+
+  EJS:
+    Permite usar código Javascript no meio
+    do arquivo html para ter um arquivo
+    dinâmico.
+
+Fim Xd

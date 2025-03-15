@@ -1,0 +1,28 @@
+/* Não, esse arquivo não é mais vazio */
+
+main {
+  padding: 5px;
+}
+
+a.next-page-btn {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  width: fit-content;
+  height: fit-content;
+  text-align: center;
+  color: white;
+  background-color: #2894ec;
+  padding: 6px 8px;
+  border-radius: 10px;
+  box-sizing: border-box;
+  transition: 500ms;
+}
+
+a.next-page-btn:hover {
+  background-color: #2075bb;
+}

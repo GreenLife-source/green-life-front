@@ -1,0 +1,18 @@
+<link rel="stylesheet" href="/templates/header/style.css" />
+
+<header>
+  <div class="btn-menu" onclick="openNav()">☰</div>
+
+  <section class="header-center">
+    <a class="logo-container" href="/"> <%- include('logo') %> </a>
+
+    <div class="pesquisar">
+      <input id="pesquisa" type="text" placeholder="Pesquise algo..." />
+      <button class="btn-pesquisar" onclick="pesquisar()">
+        <div class="icone-pesquisa"><%- include('../icons/pesquisa') %></div>
+      </button>
+    </div>
+  </section>
+
+  <div class="perfil"></div>
+</header>

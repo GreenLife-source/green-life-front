@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/resetar.css" />
+    <link rel="stylesheet" href="/sobre/style.css" />
+
+    <title><%= title %></title>
+  </head>
+  <body>
+    <%- include('templates/sidenav') %>
+
+    <!-- Bota o header-->
+    <%- include('templates/header') %>
+
+    <main>
+      <h2>Espero que dê bom</h2>
+      <a href="/" class="voltar-btn"
+        ><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+          <path
+            d="M32 15H3.41l8.29-8.29-1.41-1.42-10 10a1 1 0 0 0 0 1.41l10 10 1.41-1.41L3.41 17H32z"
+            data-name="4-Arrow Left"
+          />
+        </svg>
+        Voltar</a
+      >
+      <!-- Exemplo de como acessar API(Backend) -->
+      <div class="botoes">
+        <button onclick="buscarDados('users')">
+          Buscar Dados da API usuarios
+          <!-- JEITO ERRADO DE PEGAR ICONE SVG -->
+          <svg
+            class="icone-pesquisa"
+            xmlns="http://www.w3.org/2000/svg"
+            height="24px"
+            viewBox="0 0 24 24"
+            width="24px"
+            fill="currentColor"
+          >
+            <path d="M0 0h24v24H0V0z" fill="none"></path>
+            <path
+              d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"
+            ></path>
+          </svg>
+        </button>
+        <button onclick="buscarDados('products')">
+          Buscar Dados da API produtos
+          <!-- Jeito certo -->
+          <%- include('icons/pesquisa') %>
+        </button>
+        <button onclick="limpar()">
+          Limpar <%- include('icons/lixeira') %>
+        </button>
+      </div>
+      <pre
+        id="resultado"
+        style="display: none"
+      ><div class="produtos" id="produtos"></div><div class="usuarios" id="usuarios"></div></pre>
+    </main>
+
+    <%- include('partials/user-card.ejs') %>
+    <!--  -->
+    <%-include('partials/product-card.ejs') %>
+
+    <script src="/sobre/script.js"></script>
+
+    <script>
+      function limpar() {
+        document.getElementById("resultado").style.display = "none";
+        document.getElementById("produtos").innerHTML = "";
+        document.getElementById("usuarios").innerHTML = "";
+      }
+    </script>
+  </body>
+</html>

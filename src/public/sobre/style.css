@@ -1,0 +1,195 @@
+/* Não, esse arquivo não é mais vazio */
+
+main {
+  position: relative;
+  padding-top: 5px;
+  padding-left: 5px;
+  padding-right: 5px;
+  display: flex;
+  gap: 10px;
+  flex-direction: column;
+  max-width: 100vw;
+}
+
+a.voltar-btn {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  width: fit-content;
+  text-align: center;
+  color: white;
+  background-color: #2894ec;
+  padding: 6px 8px;
+  gap: 6px;
+  border-radius: 10px;
+  box-sizing: border-box;
+  transition: 500ms;
+}
+
+a.voltar-btn svg {
+  fill: white;
+  aspect-ratio: 1/1;
+  width: 1em;
+}
+
+a.voltar-btn:hover {
+  background-color: #2075bb;
+}
+
+.botoes {
+  display: flex;
+  gap: 10px;
+}
+
+.botoes > button {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  text-align: center;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  background-color: #3847d3;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.botoes > button:hover {
+  background-color: #1e2775;
+}
+
+.botoes > button > svg {
+  color: white;
+  fill: white;
+  aspect-ratio: 1/1;
+  width: 1em;
+  font-size: 24px;
+}
+
+#resultado {
+  white-space: nowrap;
+  overflow-x: scroll;
+}
+
+.usuarios {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+  overflow: hidden;
+}
+
+.usuarios > .usuario {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  overflow: hidden;
+  background-color: #817e81;
+  border-radius: 10px;
+  padding: 10px 5px;
+  gap: 25px;
+}
+
+.usuario > img {
+  aspect-ratio: 1/1;
+  width: 150px;
+  border-radius: 100%;
+  align-self: center;
+}
+
+.usuario > .user-info {
+  padding: 5px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  gap: 15px;
+  white-space: nowrap;
+  color: white;
+}
+
+.user-info > #nome {
+  display: block;
+  font-size: 16px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  width: 100%;
+}
+
+.user-info > .website-info {
+  display: flex;
+  gap: 1ch;
+  justify-content: center;
+  max-width: 100%;
+}
+
+.website-info > .website {
+  display: block;
+  font-size: 13px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  width: 100%;
+}
+
+.produtos {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.man,
+.woman,
+.tech,
+.jewlery {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.lista-produtos {
+  display: flex;
+  overflow-x: scroll;
+  gap: 10px;
+  padding-bottom: 15px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+.lista-produtos > .produto {
+  width: 250px;
+  background-color: #b1b1b1;
+  border-radius: 15px;
+}
+
+.produto > .foto-produto {
+  width: 250px;
+  background-color: white;
+  height: 150px;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  align-self: center;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.produto .produto-info {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 100%;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  padding: 5px;
+}
+
+.produto-info > #nome {
+  display: block;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  width: 100%;
+}

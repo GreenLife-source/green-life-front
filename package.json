@@ -1,0 +1,48 @@
+{
+  "name": "web-app-teste",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "NODE_ENV=production node server.js",
+    "dev": "NODE_ENV=development nodemon server.js",
+    "release": "standard-version",
+    "postinstall": "node .vscode/installExtensions.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/KaykGamer10/web-app-teste.git"
+  },
+  "keywords": [],
+  "contributors": [
+    {
+      "name": "Rodinaldo Pereira Silva",
+      "email": "email@email.com",
+      "url": "https://linkDoPortifolioOuGithub.com/"
+    },
+    {
+      "name": "Larissa Mendes",
+      "email": "email@email.com",
+      "url": "https://linkDoPortifolioOuGithub.com/"
+    }
+  ],
+  "license": "ISC",
+  "type": "commonjs",
+  "private": "true",
+  "bugs": {
+    "url": "https://github.com/KaykGamer10/web-app-teste/issues"
+  },
+  "homepage": "https://github.com/KaykGamer10/web-app-teste#readme",
+  "dependencies": {
+    "axios": "^1.8.2",
+    "compression": "^1.8.0",
+    "dotenv": "^16.4.7",
+    "ejs": "^3.1.10",
+    "express": "^4.21.2"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.9",
+    "standard-version": "^9.5.0"
+  }
+}

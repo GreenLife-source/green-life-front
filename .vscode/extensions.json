@@ -1,0 +1,8 @@
+{
+  "recommendations": [
+    "DigitalBrainstem.javascript-ejs-support", // EJS suport
+    "esbenp.prettier-vscode", // Prettier
+    "christian-kohler.npm-intellisense", // npm intellisense
+    "vscode-icons-team.vscode-icons" // vscode-icons
+  ]
+}

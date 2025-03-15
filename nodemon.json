@@ -1,0 +1,13 @@
+{
+  "watch": [
+    "src/**/*.js",
+    "app.js",
+    "views/**/*.ejs",
+    "public/**/*",
+    "public/templates/**/*",
+    "server.js"
+  ],
+  "ext": "js,ejs,json",
+  "exec": "node server.js",
+  "ignore": ["node_modules"]
+}
