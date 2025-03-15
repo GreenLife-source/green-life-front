@@ -1,0 +1,20 @@
+Ao fazer um commit, colocar "feat:"
+ou "fix:" antes da mensagem, para a
+versão do projeto aumentar. 
+  Exemplo: 
+  "feat: adicionado página login"
+  "fix: removido a cor rosa da pagina 
+  login"
+
+Antes de começar a programar, crie
+uma branch sendo 
+"feature/nome-da-feature" para novas
+funcionalidades e 
+"bugfix/nome-do-bug" para arrumar
+erros.
+  Exemplo: "feature/pagina-login"
+  "bugfix/corrige-login-esqueceu-senha"
+
+Lembre-se de apagar a branch que não
+será mais usada e de dar um pull 
+antes de fazer um push.
