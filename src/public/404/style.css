@@ -1,0 +1,25 @@
+main {
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+a.next-page-btn {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  width: fit-content;
+  height: fit-content;
+  text-align: center;
+  color: white;
+  background-color: #2894ec;
+  padding: 6px 8px;
+  border-radius: 10px;
+  box-sizing: border-box;
+  transition: 500ms;
+}
+
+a.next-page-btn:hover {
+  background-color: #2075bb;
+}

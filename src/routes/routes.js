@@ -9,7 +9,7 @@ const axios = require("axios");
 const router = express.Router();
 require("dotenv").config();
 
-const nomeDoSite = "Ruan 3";
+const nomeDoSite = "GreenLife";
 const argumentos = { title: nomeDoSite, environment: process.env.NODE_ENV };
 
 // Definindo o meusite.com/

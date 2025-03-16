@@ -49,4 +49,12 @@ app.use(express.static(path.join(__dirname, "public")));
 const routes = require("./routes/routes");
 app.use("/", routes);
 
+// Ao tentar acessar uma rota inexistente retorna um erro
+app.all("*", (req, res) => {
+  if (req.xhr || (req.accepts("json") && !req.accepts("html")))
+    return res.status(404).json({ erro: "A que ponto chegamos?" });
+
+  res.status(404).render("404", { title: "404 - Página não encontrada" });
+});
+
 module.exports = app;
